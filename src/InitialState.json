@@ -1,0 +1,174 @@
+{
+  "menu": [
+    { "title": "Main", "href": "#main" },
+    { "title": "About Us", "href": "#aboutUs" },
+    { "title": "Feautered works", "href": "#feauteredWorks" },
+    { "title": "Our Services", "href": "#ourServices" },
+    { "title": "Small team", "href": "#smallTeam" },
+    { "title": "What they says", "href": "#whatTheySays" },
+    { "title": "Contacts", "href": "#contacts" }
+  ],
+  "section_intro": {
+    "id": "main",
+    "title": "Say hello to ",
+    "title_highlighting": "shopno!",
+    "title_continue_highlighting": "Agency ",
+    "title_continue": "corporate shopno theme",
+    "btn": "Contact us"
+  },
+  "section_about_us": {
+    "id": "aboutUs",
+    "title": "About us",
+    "subtitle": "Lorem ipsum dolor sit amet event landing template",
+    "card": {
+      "title": "We Actually Do amazing works",
+      "post": [
+        "A visual approach is an approach to a runway at an airport conducted under instrument flight rules. The pilot must at all times have either the airport or the preceding aircraft in approach correct sight. conducted under instrument flight rules. The pilot must at all times.",
+        "Preceding aircraft in approach correct sight. conducted under instrument flight rules."
+      ],
+      "question": "why we are the great?",
+      "answer": "A visual approach is an approach to a runway at an airport conducted under instrument flight rules. The preceding aircraft in approach correct sight."
+    }
+  },
+  "section_gallery": {
+    "id": "feauteredWorks",
+    "title": "Feautered works",
+    "subtitle": "Lorem ipsum dolor sit amet event landing template"
+  },
+  "section_our_services": {
+    "id": "ourServices",
+    "title": "Our services",
+    "subtitle": "Lorem ipsum dolor sit amet event landing template",
+    "cards": [
+      {
+        "title": "Designing is The CooL LOVE FOR",
+        "post": "Our most popular service is our Virtual Receptionist. We know that sometimes it`s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates. You may even catch the client while they’re still online."
+      },
+      {
+        "title": "Cool PSD designe",
+        "post": "Our most popular service is our Virtual Receptionist. We know that sometimes it`s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates. You may even catch the client while they’re still online."
+      },
+      {
+        "title": "Designing is The CooL",
+        "post": "Our most popular service is our Virtual Receptionist. We know that sometimes it`s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates. You may even catch the client while they’re still online."
+      },
+      {
+        "title": "PSD to HTML kori",
+        "post": "We know that sometimes it`s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates. You may even catch the client while they’re still online."
+      },
+      {
+        "title": "Cool PSD designe",
+        "post": "Our most popular service is our Virtual Receptionist. We know that sometimes it`s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates. You may even catch the client while they’re still online."
+      },
+      {
+        "title": "Designing is The CooL FOR",
+        "post": "Our most popular service is our Virtual Receptionist. We know that sometimes it`s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates. You may even catch the client while they’re still online."
+      }
+    ]
+  },
+  "section_small_team": {
+    "id": "smallTeam",
+    "title": "Small team",
+    "subtitle": "Lorem ipsum dolor sit amet event landing template",
+    "cards": [
+      {
+        "name": "Al Rayhan",
+        "job": "UI designer",
+        "description": "Lorem Ipsum is not simply is  an action designer random text. It has roots in a piece."
+      },
+      {
+        "name": "Al Rayhan",
+        "job": "UI designer",
+        "description": "Lorem Ipsum is not simply is  an action designer random text. It has roots in a piece."
+      },
+      {
+        "name": "Al Rayhan",
+        "job": "UI designer",
+        "description": "Lorem Ipsum is not simply is  an action designer random text. It has roots in a piece."
+      },
+      {
+        "name": "Al Rayhan",
+        "job": "UI designer",
+        "description": "Lorem Ipsum is not simply is  an action designer random text. It has roots in a piece."
+      },
+      {
+        "name": "Al Rayhan",
+        "job": "UI designer",
+        "description": "Lorem Ipsum is not simply is  an action designer random text. It has roots in a piece."
+      },
+      {
+        "name": "Al Rayhan",
+        "job": "UI designer",
+        "description": "Lorem Ipsum is not simply is  an action designer random text. It has roots in a piece."
+      }
+    ]
+  },
+  "section_what_they_says": {
+    "id": "whatTheySays",
+    "title": "What they says",
+    "subtitle": "Lorem ipsum dolor sit amet event landing template",
+    "cards": [
+      {
+        "name": "Al Rayhan",
+        "job": "UI designer",
+        "description": "Lorem Ipsum is simply dummy text of the printing and you standard dummy know that text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "amount": 5
+      },
+      {
+        "name": "Al Rayhan",
+        "job": "UI designer",
+        "description": "Lorem Ipsum is simply dummy text of the printing and you standard dummy know that text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "amount": 3
+      },
+      {
+        "name": "Al Rayhan",
+        "job": "UI designer",
+        "description": "Lorem Ipsum is simply dummy text of the printing and you standard dummy know that text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "amount": 2
+      },
+      {
+        "name": "Al Rayhan",
+        "job": "UI designer",
+        "description": "Lorem Ipsum is simply dummy text of the printing and you standard dummy know that text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "amount": 4
+      }
+    ]
+  },
+  "section_contacts": {
+    "id": "contacts",
+    "form": {
+      "name": "Name*",
+      "subject": "Subject*",
+      "mail": "E-mail*",
+      "message": "Message*",
+      "btn": "Send message"
+    },
+    "adress": {
+      "lines": ["Adress line 1", "Adress line 2"],
+      "numbers": [
+        {
+          "title": "phone",
+          "number": "+548945645"
+        },
+        {
+          "title": "fax",
+          "number": "+45645354546"
+        }
+      ],
+      "web": [
+        {
+          "title": "web",
+          "mail": "www.designagency.net"
+        },
+        {
+          "title": "E-mail",
+          "mail": "info@designagency.net"
+        }
+      ]
+    }
+  },
+  "footer": {
+    "title": "Follow us",
+    "copyright": "Copyright Masum Parvej, All Rights Reserved"
+  }
+}

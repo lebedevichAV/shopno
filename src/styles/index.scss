@@ -1,0 +1,795 @@
+@import "./fonts";
+@import "./vars";
+@import "./reset";
+@import "./global";
+
+.header {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 4rem;
+  }
+  @media screen and (max-width: 600px) {
+    &__inner {
+      padding-top: 2rem;
+    }
+  }
+}
+
+.logo {
+  padding: 0.1875rem 0.5625rem;
+  border: 0.375rem solid $logo-border-color;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: $logo-color;
+  &_highlight {
+    padding: 0;
+    border: none;
+    font-size: 1.3125rem;
+    color: $logo-contrast-color;
+  }
+}
+
+.icon {
+  width: 1.875rem;
+  height: auto;
+  cursor: pointer;
+  transition: $transition;
+  &__box {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  &_nav {
+    color: $nav-icon-color;
+    &:hover {
+      color: $nav-icon-color-hover;
+    }
+  }
+}
+
+.title-intro {
+  margin-bottom: 9.375rem;
+  &__paragraph {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.8125rem;
+    line-height: normal;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $intro-title-color;
+    text-shadow: 5px 10px 10px rgba($black, 0.3);
+  }
+  &__highlighting {
+    padding: 0 0.4375rem;
+    background-color: $intro-title-bg-color;
+  }
+  @media screen and (max-width: 600px) {
+    margin-bottom: 4.625rem;
+    &__paragraph {
+      line-height: 4rem;
+    }
+  }
+  @media screen and (min-width: 350px) and (max-width: 599px) {
+    &__paragraph {
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+    }
+  }
+}
+
+.section {
+  &_intro {
+    .section__inner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 11.25rem 0 12.25rem;
+      background-image: url(../img/glass.png);
+      background-repeat: no-repeat;
+      background-position: 90% 80%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    &_intro {
+      .section__inner {
+        padding: 4rem 0 5rem;
+        background-position: 100% 95%;
+      }
+    }
+  }
+  &_about-us,
+  &_our-services {
+    background-color: $bg-color-medium;
+    .section__inner {
+      padding: 8rem 0 7rem;
+    }
+    .section__content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    @media screen and (max-width: 900px) {
+      .section__inner {
+        padding: 4rem 0 3.5rem;
+      }
+    }
+  }
+  @media screen and (max-width: 600px) {
+    &_about-us {
+      .section__content {
+        flex-direction: column;
+      }
+    }
+  }
+  &_featured-works {
+    background-color: $bg-color-light;
+    .section__inner {
+      padding: 8rem 0 7.0625rem;
+    }
+    @media screen and (max-width: 900px) {
+      .section__inner {
+        padding: 4rem 0 3.5rem;
+      }
+    }
+  }
+  &_small-team {
+    background-color: $bg-color-light;
+    .section__inner {
+      padding: 8rem 0 7.0625rem;
+    }
+    @media screen and (max-width: 900px) {
+      .section__inner {
+        padding: 4rem 0 3.5rem;
+      }
+    }
+  }
+  &_what-they-says {
+    background-color: $bg-color-medium;
+    .section__inner {
+      padding: 8rem 0 7.0625rem;
+    }
+    @media screen and (max-width: 900px) {
+      .section__inner {
+        padding: 4rem 0 3.5rem;
+      }
+    }
+  }
+  &_list {
+    background-color: $bg-color-light;
+    .section__inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      padding: 8rem 0 7.0625rem;
+    }
+    @media screen and (max-width: 900px) {
+      .section__inner {
+        padding: 4rem 0 3.5rem;
+      }
+    }
+  }
+  &_form {
+    position: relative;
+    background-image: url(../img/form-bg-img.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    .section__inner {
+      display: flex;
+      padding: 8rem 0 7.0625rem;
+      justify-content: space-between;
+      align-items: stretch;
+    }
+    @media screen and (max-width: 900px) {
+      .section__inner {
+        padding: 4rem 0 3.5rem;
+      }
+    }
+    @media screen and (max-width: 600px) {
+      .section__inner {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+.title-box {
+  margin-bottom: 8.625rem;
+  &__text {
+    margin-bottom: 1.0625rem;
+    @extend %default-title;
+  }
+  &__subtitle {
+    @extend %default-subtitle;
+  }
+  @media screen and (max-width: 900px) {
+    margin-bottom: 4.25rem;
+  }
+}
+
+.btn {
+  max-width: 14.5rem;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  padding: 0.5rem 0;
+  font-size: 1.125rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $btn-color;
+  background-color: initial;
+  border: 2px solid $btn-border;
+  border-radius: 2px;
+  transition: $transition;
+  &:hover {
+    color: $btn-color-hover;
+    background-color: $btn-bg-color-hover;
+    border: 2px solid $btn-border-hover;
+  }
+}
+
+.slider {
+  .swiper-wrapper {
+    max-width: 50vw;
+  }
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.5rem;
+  }
+  .swiper-pagination-bullet {
+    width: 0.625rem;
+    height: 0.625rem;
+    border-radius: 0.1875rem;
+    background-color: $about-us-pagination-bg-color;
+    opacity: 1;
+    &-active {
+      background-color: $about-us-pagination-bg-color-active;
+    }
+  }
+}
+
+.slide {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: $about-us-slide-bg-color;
+    width: 110%;
+    height: 80%;
+    z-index: -1;
+    top: 10%;
+    left: -5%;
+  }
+}
+
+.description {
+  max-width: 32.5rem;
+  width: 100%;
+  &__title {
+    margin-bottom: 1.25rem;
+    font-family: "Merriweather", serif;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $about-us-card-title-color;
+    &_question {
+      font-size: 1.0625rem;
+      color: $about-us-card-subtitle-color;
+    }
+  }
+  &__paragraph {
+    margin-bottom: 1.875rem;
+  }
+  @media screen and (max-width: 900px) {
+    margin-left: 1.5rem;
+  }
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.625rem;
+}
+
+.cards-services {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(3, 26.25rem);
+  grid-gap: 0.625rem;
+  &__item {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &_1,
+    &_3 {
+      grid-column: 1/8;
+    }
+    &_2,
+    &_4 {
+      grid-column: 8/13;
+    }
+    &_1,
+    &_2 {
+      grid-row: 1/2;
+    }
+    &_3,
+    &_4 {
+      grid-row: 2/3;
+    }
+    &_5 {
+      grid-column: 1/6;
+      background-image: url(../img/card5.jpg);
+    }
+    &_6 {
+      grid-column: 6/13;
+      background-image: url(../img/card6.jpg);
+    }
+    &_5,
+    &_6 {
+      grid-row: 3/4;
+    }
+    &_1 {
+      background-image: url(../img/card1.jpg);
+    }
+    &_2 {
+      background-image: url(../img/card2.jpg);
+    }
+    &_3 {
+      background-image: url(../img/card3.jpg);
+    }
+    &_4 {
+      background-image: url(../img/card4.jpg);
+    }
+  }
+  @media screen and (max-width: 600px) {
+    grid-template-rows: repeat(3, 15rem);
+  }
+  @media screen and (max-width: 350px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.card-service {
+  width: 100%;
+  height: 100%;
+  padding: 0 4.25rem 3.625rem;
+  background-color: $card-bg-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  color: $card-text-color;
+  &__title {
+    font-family: "Merriweather", serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $card-title-color;
+  }
+  &__post {
+    width: 20rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin: 1.625rem 0 3.75rem;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: fit-content;
+    cursor: pointer;
+    transition: $transition;
+    &:hover {
+      color: $card-link-color-hover;
+    }
+  }
+  &__link-text {
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    padding-right: 0.625rem;
+  }
+  &_active {
+    justify-content: space-between;
+    padding: 3.625rem 3.375rem;
+    background-color: $card-bg-color-active;
+    color: $card-text-color-active;
+    .card-service__title {
+      color: $card-title-color-active;
+    }
+    .card-service__post {
+      display: block;
+      margin: 0;
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    &__post {
+      width: 15rem;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    padding: 0 2rem 1.75rem;
+    &__title {
+      margin-bottom: 2rem;
+    }
+    &__post {
+      display: none;
+    }
+  }
+}
+
+.team-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 27.5rem);
+  grid-gap: 0.625rem;
+  @media screen and (max-width: 600px) {
+    grid-template-rows: repeat(2, 15rem);
+  }
+  @media screen and (max-width: 540px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+  }
+}
+
+.card-team {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &_elem-1 {
+    background-image: url(../img/team-1.jpg);
+  }
+  &_elem-2 {
+    background-image: url(../img/team-2.jpg);
+  }
+  &_elem-3 {
+    background-image: url(../img/team-3.jpg);
+  }
+  &_elem-4 {
+    background-image: url(../img/team-4.jpg);
+  }
+  &_elem-5 {
+    background-image: url(../img/team-5.jpg);
+  }
+  &_elem-6 {
+    background-image: url(../img/team-6.jpg);
+  }
+  &__content {
+    position: absolute;
+    bottom: 0;
+    background-color: $small-team-section-bg-color;
+    margin: 0 0.625rem 0.625rem;
+    padding: 2.625rem 2.375rem;
+    opacity: 0;
+    transition: $transition;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      left: 30px;
+      top: -50px;
+      border: 25px solid;
+      border-color: transparent transparent $small-team-section-bg-color
+        transparent;
+    }
+    &_active {
+      opacity: 1;
+    }
+  }
+  &__title {
+    font-family: "Merriweather", serif;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  &__position {
+    padding-left: 0.3125rem;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    font-style: italic;
+    text-transform: capitalize;
+    color: $pale-grey-95;
+  }
+  &__description {
+    margin: 1.375rem 0;
+  }
+  @media screen and (max-width: 900px) {
+    &__content {
+      margin: 0 0.625rem 0.625rem;
+      padding: 1.5rem;
+    }
+    &__title {
+      font-size: 1rem;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    &__content {
+      height: 100%;
+      margin: 0;
+      padding: 0.5rem;
+      &::before {
+        content: none;
+      }
+    }
+    &__title {
+      font-size: 1rem;
+    }
+    &__description {
+      margin: 1rem 0;
+    }
+  }
+  @media screen and (max-width: 540px) {
+    width: 100%;
+    height: 350px;
+  }
+}
+
+.social-network {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+  &__icon {
+    width: 1.2rem;
+    color: $small-team-section-icon-color;
+    &:hover {
+      color: $small-team-section-icon-color-hover;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    width: 70%;
+  }
+}
+
+.card-slide {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  &__img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 35%;
+    width: 100%;
+    padding: 1% 0;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: $about-us-slide-bg-color;
+      width: 100%;
+      height: 90%;
+      z-index: -1;
+      top: 5%;
+    }
+  }
+  &__img {
+    display: block;
+    width: 80%;
+    height: auto;
+    box-shadow: 2px 2px 10px 3px rgba(#000, 0.1);
+  }
+  &__content-box {
+    max-width: 58%;
+    width: 100%;
+    background-color: $about-us-slide-bg-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1.25rem 0;
+  }
+  &__title {
+    font-family: "Merriweather", serif;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  &__job {
+    font-family: "Merriweather", serif;
+    font-size: 0.9375rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: italic;
+    color: $what-they-says-section-card-subtitle-color;
+  }
+  &__text {
+    text-align: center;
+    max-width: 75%;
+    margin: 3% 0;
+  }
+  &__stars-box {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  @media screen and (max-width: 600px) {
+    &__title {
+      margin-bottom: 2rem;
+    }
+    &__content-box {
+      max-width: 60%;
+    }
+    &__text {
+      display: none;
+    }
+  }
+}
+
+.slider-full-width {
+  .swiper-slide {
+    margin-bottom: 5%;
+  }
+  .swiper-pagination-bullet {
+    width: 0.625rem;
+    height: 0.625rem;
+    border-radius: 0.1875rem;
+    background-color: $about-us-pagination-bg-color;
+    opacity: 1;
+    &-active {
+      background-color: $about-us-pagination-bg-color-active;
+    }
+  }
+}
+
+.brand {
+  margin-left: 1.875rem;
+}
+.form,
+.contacts {
+  display: flex;
+  flex-direction: column;
+  background-color: $form-section-background-color;
+  width: 100%;
+  padding: 2.9375rem 2rem 2.375rem;
+  color: $form-section-text-color;
+}
+
+.form {
+  max-width: 54%;
+  @media screen and (max-width: 600px) {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+  &__input,
+  &__text-area {
+    background-color: initial;
+    border: none;
+    border-bottom: 1px solid $form-section-border-color;
+    outline: none;
+    margin-bottom: 2.375rem;
+    &::placeholder {
+      color: $form-section-placeholder-color;
+    }
+  }
+  &__text-area {
+    resize: none;
+    height: 7.5rem;
+  }
+}
+
+.contacts {
+  max-width: 44%;
+  @media screen and (max-width: 600px) {
+    max-width: 100%;
+  }
+  &__title {
+    text-transform: capitalize;
+    margin-right: 0.5rem;
+    &::after {
+      content: ":";
+    }
+  }
+  &__link {
+    color: inherit;
+    cursor: pointer;
+  }
+  &__web-box {
+    margin: 1.5rem 0 1rem;
+  }
+}
+
+.footer {
+  background-color: $footer-bg-color;
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5.5rem 0;
+    font-family: "Raleway", sans-serif;
+  }
+  &__title {
+    text-transform: uppercase;
+    font-weight: 400;
+    color: $footer-title-color;
+  }
+
+  &__copyright {
+    font-weight: 500;
+    color: $footer-color;
+  }
+}
+
+.social-network-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 12rem;
+  width: 100%;
+  &__icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $footer-bg-btn-color;
+    padding: 0.1875rem 0.3125rem;
+    margin: 1rem 0 2rem;
+    cursor: pointer;
+    transition: $transition;
+    &:hover {
+      background-color: $footer-bg-btn-color-active;
+      .social-network-footer__icon {
+        color: $footer-icon-color-active;
+      }
+    }
+  }
+  &__icon {
+    width: 2rem;
+    height: auto;
+    color: $footer-icon-color;
+  }
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 30%;
+  padding: 4.6rem 1rem;
+  background-color: $nav-bg-color;
+  box-shadow: 0px 0px 15px 5px rgba(#000, 0.4);
+  z-index: 20;
+  &__list {
+    height: 70%;
+  }
+  &__item {
+    margin-bottom: 1rem;
+  }
+  &__link {
+    @extend %default-subtitle;
+    color: $pearl;
+    transition: $transition;
+    &:hover {
+      color: $turquoise-blue-rayola;
+    }
+  }
+  @media screen and (min-width: 900px) {
+    padding: 2rem 1rem;
+  }
+  @media screen and (min-width: 600px) and (max-width: 899px) {
+    width: 50%;
+  }
+  @media screen and (min-width: 350px) and (max-width: 599px) {
+    width: 100%;
+  }
+}
